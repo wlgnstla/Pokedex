@@ -1,5 +1,5 @@
 # Jeehoons-Pokédex
-A Pokédex containing all the Pokémon from Generation I to the latest Generation VIII. <br/> <br/>
+A Pokédex containing all the Pokémon from Generation I to the latest Generation VIII! <br/> <br/>
 <a href="https://pokedex-wlgnstla.vercel.app/">Gotta Catch 'Em All</a>
 
 ## Stack
