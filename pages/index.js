@@ -1,4 +1,3 @@
-import { Box } from "@chakra-ui/react"
 import { useState } from "react"
 import NextLink from "next/Link"
 
@@ -16,7 +15,7 @@ export default function IndexPage({ pokemon }) {
 
   return (
     <>
-      <h1 className="text-4xl text-center mb-2">Jeehoon's Mega Pokédex</h1>
+      <h1 className="text-4xl text-center mb-2">Jeehoon&apos;s Mega Pokédex</h1>
       <h2 className="text-center mb-8">(From Gen I to Gen VIII)</h2>
       <div className="text-center">
         <label htmlFor="pokemon">
@@ -61,7 +60,7 @@ export default function IndexPage({ pokemon }) {
   )
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   try {
     const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=905")
     const { results } = await res.json()
