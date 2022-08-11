@@ -1,5 +1,5 @@
 import { useState } from "react"
-import NextLink from "next/Link"
+import NextLink from "next/link"
 
 export default function IndexPage({ pokemon }) {
   const [monster, setMonster] = useState("")
