@@ -11,7 +11,6 @@ export default function IndexPage({ pokemon }) {
     monster === ""
       ? pokemon
       : pokemon.filter(pokeman => pokeman.name.includes(monster.toLowerCase()))
-  console.log(pokemon)
 
   return (
     <>
