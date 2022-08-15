@@ -30,7 +30,15 @@ export default function Pokemon({ pokeman }) {
         </p>
         <p>
           <span className="font-bold mr-2">Height: </span>
-          {pokeman.height}
+          {pokeman.height >= 100 ? 
+          JSON.stringify(pokeman.height).slice(0,2) + "." + 
+              JSON.stringify(pokeman.height).charAt(2) :
+              pokeman.height >= 10 ? JSON.stringify(pokeman.height).charAt(0) + 
+              "." + JSON.stringify(pokeman.height).charAt(1) : 
+              pokeman.height >= 0 ? "0." + JSON.stringify(pokeman.height) : pokeman.height
+          }
+          { " " }
+          m
         </p>
         <h2 className="text-2xl  mt-6 mb-2"> Types</h2>
         {pokeman.types.map((type, index) => {
