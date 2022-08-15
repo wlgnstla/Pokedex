@@ -10,9 +10,9 @@ export default function Pokemon({ pokeman }) {
         transition={{ duration: 0.4, type: "easeInOut" }}
       >
         <h1 className="text-4xl mb-2 text-center capitalize">{pokeman.name}</h1>
-        <img className="mx-auto" src={pokeman.image} alt={pokeman.name} />
+        <img width="300" className="mx-auto" src={pokeman.image} alt={pokeman.name} />
         <p>
-          <span className="font-bold mr-2">Weight: </span>
+          <span className="font-bold mr-2 ml-2">Weight: </span>
           {pokeman.weight >= 1000
             ? JSON.stringify(pokeman.weight).slice(0, 3) +
               "." +
@@ -29,7 +29,7 @@ export default function Pokemon({ pokeman }) {
           kg
         </p>
         <p>
-          <span className="font-bold mr-2">Height: </span>
+          <span className="font-bold mr-2 ml-2">Height: </span>
           {pokeman.height >= 100 ? 
           JSON.stringify(pokeman.height).slice(0,2) + "." + 
               JSON.stringify(pokeman.height).charAt(2) :
@@ -40,10 +40,10 @@ export default function Pokemon({ pokeman }) {
           { " " }
           m
         </p>
-        <h2 className="text-2xl  mt-6 mb-2"> Types</h2>
+        <h2 className="text-2xl  mt-6 mb-2 ml-2"> Types</h2>
         {pokeman.types.map((type, index) => {
           return (
-            <p className="capitalize" key={index}>
+            <p className="capitalize ml-2" key={index}>
               {type.type.name}
             </p>
           )
